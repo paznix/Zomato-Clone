@@ -48,22 +48,8 @@ body {
         justify-content: space-between;
         padding: 10px 30px;
     }
-}
 
-@media (min-width: 1024px) {
-    .nvabar__brand {
-        width: 150px;
-        justify-content: space-between;
-        padding: 10px 30px;
-    }
-
-    .nav__item {
-        padding: 20px;
-        font-size: 20px;
-    }
-}
-
-.nav__item:hover {
+    .nav__item:hover {
     outline-color: #ffffff;
     background-blend-mode: overlay #ffc4cc 50%;
     scale: 102%;
@@ -71,4 +57,30 @@ body {
     font-size: 10px;
     box-shadow: 0 4px 4px 0 rgb(60 64 67 / 10%), 0 8px 12px 6px rgb(60 64 67 / 5%);
     outline: none;
+}
+}
+
+@media (min-width: 1024px) {
+    .nvabar__brand {
+        width: 150px;
+        justify-content: space-between;
+        padding: 10px 30px;
+        margin-top: 5%;
+    }
+
+    .nav__item {
+        padding: 20px;
+        font-size: 16px;
+        border-radius: 34px;
+    }
+
+    .nav__item:hover {
+    outline-color: #ffffff;
+    background-blend-mode: overlay #ffc4cc 50%;
+    scale: 102%;
+    transition: ease-in-out 300ms;
+    font-size: 18px;
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 10%), 0 8px 12px 6px rgb(60 64 67 / 5%);
+    outline: none;
+}
 }
