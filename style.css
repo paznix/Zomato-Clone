@@ -125,11 +125,11 @@ body {
 }
 
 .explore {
-    margin: 20px;
+    margin-top: 100px;
     text-align: center;
 }
 
-.card_list {
+.card__list {
     width: 100%;
     margin: 5px;
 
@@ -201,8 +201,7 @@ a {
         margin: 20px 10px 10px 20px;
     }
 
-    .card_list {
-        width: 50%;
+    .card__list {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
