@@ -12,15 +12,17 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 12px;
-
+    background-color: #fff2f2;
+    box-shadow: 2px 0px 1px;
 }
 
-.nvabar__brand {
+.navbar__brand {
     width: 100px;
 }
 
-.navbar__logo {
+.navbar__logo{
     width: 100%;
+    scale: 110%;
 }
 
 .nav__item {
@@ -51,13 +53,11 @@ body {
 
     .nav__item:hover {
     outline-color: #ffffff;
-    background-blend-mode: overlay #ffc4cc 50%;
-    scale: 102%;
     transition: ease-in-out 300ms;
-    font-size: 10px;
+    font-size: 8px;
     box-shadow: 0 4px 4px 0 rgb(60 64 67 / 10%), 0 8px 12px 6px rgb(60 64 67 / 5%);
     outline: none;
-}
+    }
 }
 
 @media (min-width: 1024px) {
@@ -68,6 +68,11 @@ body {
         margin-top: 5%;
     }
 
+    .navbar__logo {
+        scale: 175%;
+        margin-left: 20%;
+    }
+
     .nav__item {
         padding: 20px;
         font-size: 16px;
@@ -76,11 +81,57 @@ body {
 
     .nav__item:hover {
     outline-color: #ffffff;
-    background-blend-mode: overlay #ffc4cc 50%;
-    scale: 102%;
     transition: ease-in-out 300ms;
-    font-size: 18px;
+    font-size: 16px;
     box-shadow: 0 4px 4px 0 rgb(60 64 67 / 10%), 0 8px 12px 6px rgb(60 64 67 / 5%);
     outline: none;
+    }
+
+    .footer {
+        flex-direction: initial;
+        justify-content: space-around;
+        padding-bottom: 0;
+    }
+
+    .footer__links {
+        text-align: left;
+        font-size: medium;
+    }
 }
+
+
+
+
+
+
+.footer {
+    display: flex;
+    background-image: linear-gradient(
+        to bottom,
+        #fd314a 0%,
+        #ef0549 35%,
+        #ef0549 75%,
+        #fd314a 100%
+    );
+    align-items: center;
+    padding-bottom: 15px;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: -2px 0 1px;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.footer__logo {
+    scale: 80%;
+}
+
+.footer__links {
+    text-align: left;
+    font-size: small;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
 }
