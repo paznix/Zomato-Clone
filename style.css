@@ -4,16 +4,16 @@
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #f9fafc;
+    background-color: #cfdbf0;
 }
 
 .navbar {
     align-items:first center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 12px;
     background-color: #fff2f2;
-    box-shadow: 2px 0px 1px;
+    box-shadow: 2px 0px 7px 0 #c2c2c2;
 }
 
 .navbar__brand {
@@ -25,7 +25,7 @@ body {
     scale: 110%;
 }
 
-.nav__item {
+.button__primary {
     align-items: center;
     background-image: linear-gradient(
         to bottom,
@@ -45,18 +45,70 @@ body {
     transition: ease-in-out 300ms;
 }
 
+.container {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.hero__desc {
+    padding-top: 2rem;
+    color: #172436;
+}
+
+.hero__text {
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.hero__image__container {
+    width: 100%;
+    position: relative;
+}
+
+.hero__image {
+    border-radius: 6px;
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.4);
+    width: 100%;
+    z-index: 2;
+}
+
+.hero__back {
+    scale: 70%;
+    position: absolute;
+}
+
+.hero__shape {
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+.hero__pattern {
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
 @media (min-width: 768px) {
     .navbar {
         justify-content: space-between;
         padding: 10px 30px;
     }
 
-    .nav__item:hover {
-    outline-color: #ffffff;
-    transition: ease-in-out 300ms;
-    font-size: 8px;
-    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 10%), 0 8px 12px 6px rgb(60 64 67 / 5%);
-    outline: none;
+    .button__primary:hover {
+        outline-color: #ffffff;
+        transition: ease-in-out 300ms;
+        font-size: 8px;
+        box-shadow: 0 4px 4px 0 rgb(60 64 67 / 10%), 0 8px 12px 6px rgb(60 64 67 / 5%);
+        outline: none;
+    }
+
+    .hero__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 20px 10px 10px 20px;
     }
 }
 
@@ -73,35 +125,81 @@ body {
         margin-left: 20%;
     }
 
-    .nav__item {
+    .button__primary {
         padding: 20px;
         font-size: 16px;
         border-radius: 34px;
     }
 
-    .nav__item:hover {
-    outline-color: #ffffff;
-    transition: ease-in-out 300ms;
-    font-size: 16px;
-    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 10%), 0 8px 12px 6px rgb(60 64 67 / 5%);
-    outline: none;
+    .button__primary:hover {
+        outline-color: #ffffff;
+        transition: ease-in-out 300ms;
+        font-size: 16px;
+        box-shadow: 0 4px 4px 0 rgb(60 64 67 / 10%), 0 8px 12px 6px rgb(60 64 67 / 5%);
+        outline: none;
     }
 
+    .container {
+        max-width: 80%;
+        justify-content: center;
+    }
+
+    .hero__desc {
+        width: 100%;
+    }
+
+    .hero__text {
+        font-size: 40px;
+    }
+
+    
     .footer {
-        flex-direction: initial;
-        justify-content: space-around;
-        padding-bottom: 0;
+        display: flex;
+        padding-top: 1rem;
+        flex-direction: row;  
+        justify-content: space-evenly;
+        align-items: center;
+
     }
 
     .footer__links {
-        text-align: left;
-        font-size: medium;
+        text-align: left;   
     }
 }
 
+.menu__text {
+    font-size: 30px;
+    color: #172436;
+    font-weight: 900;
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+ .food__card {
+    background-color: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 2px 2px 20px 0 rgba(36, 37, 46, 0.432);
+ }
 
+.food__card__image {
+    width: 100%;
+}
 
+.food__image {
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+    margin-bottom: 0;
+}
 
+.food__card__desc {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    margin-top: 0;
+}
+
+.span {
+    color: #fd314a;
+}
 
 
 .footer {
@@ -113,25 +211,34 @@ body {
         #ef0549 75%,
         #fd314a 100%
     );
+    justify-content: space-around;
     align-items: center;
-    padding-bottom: 15px;
-    border-radius: 5px 5px 0px 0px;
-    box-shadow: -2px 0 1px;
+    border-radius: 1rem 1rem 0px 0px;
+    box-shadow: 0 -2px 7px 0 #c2c2c2;
     flex-direction: column;
     position: absolute;
     bottom: 0;
     width: 100%;
-    justify-content: space-around;
+    gap: 10px;
     
 }
 
-.footer__logo {
+.brand__logo {
     scale: 80%;
 }
 
 .footer__links {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: left;
-    font-size: small;
+    padding-bottom: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: #f9fafc;
     font-family: 'Merriweather', serif;
-    cursor: pointer;
+    text-align: left;
 }
