@@ -139,7 +139,7 @@ body {
         #fd3131 100%
     );
     position: absolute;
-    height: 100%;
+    height: 95%;
     width: 100%;
     top: 0;
     left: 0;
@@ -188,15 +188,14 @@ body {
 }
 
 .extra__s {
-    width: 100%;
     margin-top: 5rem;
-    align-content: center;
+    
 }
 
 .extra__images {
-    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .extra__up {
@@ -233,11 +232,13 @@ body {
 }
 
 .famous {
+    width: 100%;
     font-size: 30px;
     color: #172436;
     font-weight: 900;
     text-align: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .footer__links {
@@ -307,22 +308,31 @@ a {
         margin-bottom: 1rem;
     }
 
-    .text__restraunts {
-        align-items: center;
-    }
 
     .view__more {
         color: #fff;
     }
 
     .famous {
+        margin-bottom: 0;
         text-align: left;
+        height: auto;
     }
 
     .extra__s {
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        margin-top: 8rem;
+    }
+
+    .extra__up {
+        display: flex;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .extra__down {
+        display: flex;
     }
 }
 
